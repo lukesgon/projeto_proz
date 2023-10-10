@@ -2,21 +2,12 @@ function createNav() {
   const navContainer = document.getElementById("nav-container");
   const nav = document.createElement("nav");
   
-  const logoLink = document.createElement("a");
-  logoLink.href = "index.html";
-  const logoImage = document.createElement("img");
-  logoImage.src = "./src/app/img/Xplay Games.png";
-  logoImage.alt = "Logo - XPlay - Games";
-  logoImage.style.height = "70px";
-  logoImage.style.width = "auto";
-  logoLink.appendChild(logoImage);
-  
   const links = [
-      { text: "Início", href: "index.html" },
-      { text: "Login", href: "login.html" },
-      { text: "Sobre", href: "sobre.html" },
-      { text: "Suporte", href: "suporte.html" },
-      { text: "Carrinho", href: "carrinho.html" }
+      { text: "Início", href: "./src/app/pages/Home/home.html"},
+      { text: "Login", href: "./src/app/pages/Login/login.html" },
+      { text: "Sobre", href: "./src/app/pages/Sobre/sobre.html" },
+      { text: "Suporte", href: "./src/app/pages/Suporte/suporte.html" },
+      { text: "Carrinho", href: "./src/app/pages/Carrinho/carrinho.html" }
   ];
 
   links.forEach(linkInfo => {
@@ -44,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
           .then((response) => response.text())
           .then((html) => {
               contentElement.innerHTML = html;
-          })
-          .catch((error) => {
+            })
+            .catch((error) => {
               console.error("Erro ao carregar a página:", error);
           });
   }
@@ -57,9 +48,50 @@ document.addEventListener("DOMContentLoaded", function () {
           event.preventDefault();
           const href = this.getAttribute("href");
           loadPage(href);
-      });
+
+          navLinks.forEach((otherLink) => {
+            otherLink.querySelector("button").classList.remove("active");
+          });
+          this.querySelector("button").classList.add("active");
+        });
+      
   });
 
-  // Carregue a página inicial por padrão
-  loadPage("home.html");
+   // Função para animar o texto letra por letra
+   function animateText() {
+    const textElement = document.querySelector('.animated-text');
+    const text = textElement.innerText;
+    textElement.innerText = '';
+    
+    let i = 0;
+    const interval = 100; // Intervalo em milissegundos (100ms neste exemplo)
+
+    function addNextLetter() {
+        if (i < text.length) {
+          if (text.charAt(i) === ' ') {
+            textElement.innerHTML += '&nbsp;';
+          }else {
+            textElement.innerText += text.charAt(i);
+          } 
+          i++;
+          setTimeout(addNextLetter, interval);
+        } else {
+            // Quando todas as letras forem adicionadas, reinicie a animação
+            setTimeout(() => {
+                textElement.innerText = '';
+                i = 0;
+                addNextLetter();
+            }, 2000); // Aguarde 2 segundos antes de reiniciar
+        }
+    }
+
+    // Inicie a animação
+    addNextLetter();
+}
+
+ // Chame a função para iniciar a animação
+  animateText();
+
+// Carregue a página inicial por padrão
+loadPage("./src/app/pages/Home/home.html");
 });
