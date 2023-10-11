@@ -1,52 +1,71 @@
-.container-login {
+.container-suporte {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; 
 }
 
-.formulario-login {
+.formulario-suporte {
   display: flex;
-  width: 35rem;
-  min-height: calc(100vh - 40rem);
+  width: 55rem;
+  min-height: calc(100vh - 25rem);
   border-radius: 25px;
   padding: 2rem;
   background-color: #092e3a;
 }
 
-.barra-vertical {
+.barra-vertical-suporte {
   padding: 0.025rem;
-  margin: 0px 1rem 0px 2rem;
+  margin: 0px 3rem;
   background-color: #abbec6;
 }
 
-.formulario-login h2 {
+.formulario-suporte-suporte h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
-.inputs-valores {
+.inputs-valores-suporte {
   display: flex;
   flex-direction: column;
 }
 
-.inputs-valores label {
+.inputs-valores-suporte label {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-top: 0.5rem;
 }
 
-.formulario-login input {
-  width: 15rem;
+.formulario-suporte input {
+  width: 23rem;
   padding: 0.5rem;
   margin-top: 0.3rem;
   border-radius: 25px;
   background-color: #abbec6;
 }
 
-.botao-entrar {
-  margin-left: 4rem;
+.inputs-valores-suporte .text-area {
+  width: 23rem;
+  height: 6rem;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 15px;
+  background-color: #abbec6;
+}
+
+.inputs-valores-suporte h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.text-area {
+  vertical-align: top; 
+}
+
+.botao-entrar-suporte {
+  margin-left: 8rem;
   padding: 0.3rem;
   border-radius: 25px;
   background-color: #274855;
@@ -54,37 +73,33 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: large;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   width: 7rem;
 }
 
-.formulario-login a {
-  text-align: center;
-
-  margin-top: 0.5rem;
-  color: #274855;
-} 
-
-.crie-conta {
+.crie-conta-suporte {
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.crie-conta-suporte h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   text-align: center;
 }
 
-.crie-conta h2 {
+.crie-conta-suporte p {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.crie-conta p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 1.1rem;
   color: #abbec6;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.crie-conta button {
-  margin-top: 1rem;
+.crie-conta-suporte button {
+  margin-left: 9rem;
   padding: 0.3rem;
   color: #bc8c3c ;
   border-radius: 25px;
@@ -92,6 +107,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: large;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   width: 7rem;
 }
