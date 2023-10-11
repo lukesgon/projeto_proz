@@ -12,95 +12,95 @@ textarea:focus, input:focus, select:focus {
   outline: 0;
 } 
 
-  .container {
-    background-color: #274855;
-    color: #bc8c3c;
-  }
-
-  #nav-container a {
-    margin-right: 1rem;
-  }
-
- #nav-container a button { 
-    width: 4.6rem;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: medium;
-
-    background-color: #274855;
-    color: #abbec6;
-  }
-
-  #nav-container a button.active {
-    color: #bc8c3c;
-  }
-
-  .nav {
-    display: flex;
-    padding: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #092e3a;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-  }
-
-  .nav h2 {
-    margin-right: auto;
-    margin-left: 1rem;
-    font-size: 3rem;
-    color: #274855;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-weight: 700;
-  }
-
-  .animated-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+.container {
+  background-color: #274855;
+  color: #bc8c3c;
 }
 
-  .nav img {
-    max-width: 4vw;
-  }
+#nav-container a {
+  margin-right: 1rem;
+}
+
+#nav-container a button { 
+  width: 4.6rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+
+  background-color: #274855;
+  color: #abbec6;
+}
+
+#nav-container a button.active {
+  color: #bc8c3c;
+}
+
+.nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #092e3a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav h2 {
+  margin-right: auto;
+  margin-left: 1rem;
+  font-size: 3rem;
+  color: #274855;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 700;
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav img {
+  max-width: 4vw;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  bottom: initial;
+  background-color: #092e3a;
+
+}
+
+.footer span {
+  margin-left: auto;
+}
+
+.rede-sociais {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 2rem;
+
+}
+
+.rede-sociais span {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 0.5rem;
   
+}
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    bottom: initial;
-    background-color: #092e3a;
-  }
-
-  .footer span {
-    margin-left: auto;
-  }
-
-  .rede-sociais {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    margin-right: 2rem;
-
-  }
-
-  .rede-sociais span {
-    color: #fff;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    
-  }
-
-  .rede-sociais a {
-    margin-right: 0.5rem ;
-  }
+.rede-sociais a {
+  margin-right: 0.5rem ;
+}
