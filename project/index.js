@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
    // Função para animar o texto letra por letra
-   function animateText() {
+  function animateText() {
     const textElement = document.querySelector('.animated-text');
     const text = textElement.innerText;
     textElement.innerText = '';
