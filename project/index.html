@@ -5,42 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XPlay - Games</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./src/app/pages/Login/login.css">
+    <link rel="stylesheet" type="text/css" href="./src/app/pages/Suporte/suporte.css">
+    <link rel="stylesheet" type="text/css" href="./src/app/pages/Carrinho/carrinho.css">
+    <link rel="stylesheet" type="text/css" href="./src/app/pages/Sobre/sobre.css">
+    <link rel="stylesheet" type="text/css" href="./src/app/pages/Home/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Pixelify+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #274855; color:#bc8c3c">
-    <header style="background-color: #092e3a;">
-        <nav>
-            <a href="./index.html"><img src="./img/Xplay Games.png" alt="Logo - XPlay - Games" style="height: 70px; width: height;"></a>
-            <a href="./index.html">
-                <button>Início</button>
-            </a>
-            <a href="./login.html">
-                <button>Login</button>
-            </a>
-            <a href="./sobre.html">
-                <button>Sobre</button>
-            </a>
-            <a href="./suporte.html">
-                <button>Suporte</button>
-            </a>
-            <a href="./carrinho.html">
-                <button>Carrinho</button>
-            </a>
-        </nav>
-        <div style="background-color: #abbec6;">
-            <p>Aqui vai aparecer um banner carrossel, dentro de uma div</p>
-        </div>
+<body class="container">
+    <header class="nav">
+        <figure>
+            <img src="./src/app/assets/img/Xplay-Games.png" alt="logo-Xplay-games">
+        </figure>
+        <h2><span class="animated-text">A melhor em Games e Consoles</span></h2>
+        <div id="nav-container"></div>  
     </header>
-    <main style="background-color: #274855;">
-        <section class="item">
-            <h1>Os Mais Procurados</h1>
-            <p>Aqui uma série de divs contendo produtos e informações será mostrada</p>
-        </section>
+    <main>
+        <div id="content"></div>
     </main>
-    <footer style="background-color: #092e3a;">
-        <span>XPlay - Games. Todos os direitos reservados, 2023.</span>
-        <span>Nossas Redes</span>
-        <a href=""><img src="./img/facebook.png" alt="facebook_logo"></a>
-        <a href=""><img src="./img/instagram.png" alt="instagram_logo"></a>
+    <footer class="footer">
+        <span id="spanFooter">XPlay - Games. Todos os direitos reservados, 2023.</span>
+        <div class="rede-sociais">
+            <span>Siga nossas redes </span>
+            <a href=""><img src="./src/app/assets/img/facebook.png" alt="facebook_logo"></a>
+            <a href=""><img src="./src/app/assets/img/instagram.png" alt="instagram_logo"></a>
+        </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

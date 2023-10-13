@@ -1,0 +1,43 @@
+.container-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+
+  
+}
+
+.content-sobre {
+  display: flex;
+  background-color: #092e3a;
+  height: 60vh;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.texto-sobre {
+  margin: 5rem;
+}
+
+.texto-sobre h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.texto-sobre p {
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #abbec6;
+  margin-top: 1rem;
+}
+
+.imagem-sobre img {
+  width: 45rem;
+  border-radius: 15px;
+  margin-right: 3rem;
+}

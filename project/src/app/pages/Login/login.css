@@ -1,0 +1,97 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario-login {
+  display: flex;
+  width: 35rem;
+  min-height: calc(100vh - 40rem);
+  border-radius: 25px;
+  padding: 2rem;
+  background-color: #092e3a;
+}
+
+.barra-vertical {
+  padding: 0.025rem;
+  margin: 0px 1rem 0px 2rem;
+  background-color: #abbec6;
+}
+
+.formulario-login h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.inputs-valores {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-valores label {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.formulario-login input {
+  width: 15rem;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 25px;
+  background-color: #abbec6;
+}
+
+.botao-entrar {
+  margin-left: 4rem;
+  padding: 0.3rem;
+  border-radius: 25px;
+  background-color: #274855;
+  color: #abbec6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: large;
+  margin-top: 1rem;
+  width: 7rem;
+}
+
+.formulario-login a {
+  text-align: center;
+
+  margin-top: 0.5rem;
+  color: #274855;
+} 
+
+.crie-conta {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.crie-conta h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.crie-conta p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #abbec6;
+  margin-top: 1rem;
+}
+
+.crie-conta button {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  color: #bc8c3c ;
+  border-radius: 25px;
+  background-color: #274855 ;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: large;
+  margin-top: 2rem;
+  width: 7rem;
+}
