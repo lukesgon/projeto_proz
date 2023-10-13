@@ -1,14 +1,16 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+}
+
 .carrossel {
   width: 100%;
-  min-height: calc(100vh - 40vh);
+  height: 60vh;
   background-color: #abbec6;
 }
 
 .container-cards {
   width: 100%;
-  height: calc(100vh - 30vh);
-  background-color: #274855;
-  margin-top: 4rem;
 }
 
 .container-cards h1 {
