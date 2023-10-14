@@ -13,14 +13,14 @@
   justify-content: center;
   align-items: center;
   background-color: #092e3a;
-  width: 58rem;
+  width: 50rem;
   height: 35rem;
   border-radius:15px ;
   padding: 1rem 0;
 }
 
 .produtos-selecionados {
-  width: 52rem;
+  width: 46rem;
   height: 38rem;
   background-color: #abbec6;
   border-radius: 15px;
@@ -37,6 +37,10 @@
   display: flex;
   align-items: center;
   margin: 1rem auto 0 3rem;
+}
+
+.frete input {
+  width: 7rem;
 }
 
 .frete p {
@@ -80,7 +84,7 @@
 
 .valor-produtos {
   width: 19rem;
-  height: 38rem;
+  height: 29.3rem;
   background-color: #abbec6;
   border-radius: 15px;
 
