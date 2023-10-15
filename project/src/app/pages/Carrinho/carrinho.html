@@ -1,20 +1,86 @@
 <div class="container-carrinho">
     <div class="carrinho-compras">
         <h2>Carrinho de Compras</h2>
-        <section class="produtos-selecionados"></section>
+        <section class="produtos-selecionados">
+            <div class="nav-carrinho">
+                <p class="produto">Produto</p>
+                <p class="quantidade">Qtd.</p>
+                <p class="unidade">Unit.</p>
+                <p class="total">Total</p>
+            </div>
+            <span class="barra-vertical-carrinho"></span>
+            <ul>
+                <li class="conteudo-carrinho">
+                    <div class="imagem-produto">
+                        <img src="" alt="">
+                    </div>
+                    <p class="texto-produto">console de videoGame xbox Série x</p>
+                    <div class="quantidade-produto">
+                        <span>1 <p>V</p></span>
+                        <button>x</button>
+                    </div>
+                    <p class="valor-produto">$1999</p>
+                    <p class="total-produto">$1999</p>
+                </li>
+            </ul>
+            <span class="barra-vertical-carrinho"></span>
+
+            <button class="botao-esvaziar">Esvaziar</button>
+        </section>
         <div class="frete">
             <p>Calcule o frete</p>
             <input type="text">
             <button>Confirmar</button>
-            <div><p>Endereço não encontrado</p></div>
+            <div>
+                <p>Endereço não encontrado</p>
+            </div>
         </div>
     </div>
-    
+
     <div class="resumo-pedido">
         <h2>Resumo do Pedido</h2>
-        <section class="valor-produtos"></section>
+        <section class="valor-produtos">
+            <hr />
+            <div class="header-resumo">
+                <p class="produto-resumo">Produto</p>
+                <p class="codigo-resumo">Cod.</p>
+                <p class="quantidade-resumo">Qtd.</p>
+                <p class="unidade-resumo">Unit.</p>
+                <p class="total-resumo">Total</p>
+            </div>
+            <hr>
+            <section class="produtos-resumo">
+                <p class="console">Console X</p>
+                <p class="cod-produto-resumo">xpn24</p>
+                <p class="quant-produto-resumo">01</p>
+                <p class="unit-produto-resumo">$1999</p>
+                <p class="total-produto-resumo">$1999</p>
+            </section>
+            <hr>
+            <main>
+                <section class="endereco-entrega">
+                    <p class="cep">CEP</p>
+                    <p class="endereco">Endereço</p>
+                    <p class="total">Total</p>
+                </section>
+
+                <section class="usuario-entrega">
+                    <p class="cep-usuario">999.999.999-99</p>
+                    <p class="endereco-usuario">R. x de y - Cidade, Estado / País</p>
+                    <p class="total-usuario">$999</p>
+                </section>
+
+            </main>
+            <hr>
+            <footer>
+                <div class="total-pedido">
+                    <p class="texto-pedido">Total do pedido</p>
+                    <p>$4.217</p>
+                </div>
+
+                <span class="agradecimento">A xPlay - Games, agradece sua confiança e preferência.</span>
+            </footer>
+        </section>
         <button>Fechar Pedido</button>
     </div>
-    
 </div>
-    
