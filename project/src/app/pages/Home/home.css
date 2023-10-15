@@ -19,7 +19,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-
+  padding-bottom: 4rem;
 }
 
 .cards-produtos {
@@ -47,7 +47,6 @@
 .card-footer {
   width: 100%;
   bottom: 0;
- 
   border-radius: 0px 0px 15px 15px;
   height: 2rem;
   position: relative;
