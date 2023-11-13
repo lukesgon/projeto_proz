@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   background-color: #092e3a;
-  width: 50rem;
+  width: 70%;
   height: 35rem;
   border-radius:15px ;
   padding: 1rem 0;
@@ -22,7 +22,7 @@
 .produtos-selecionados {
   display: flex;
   flex-direction: column;
-  width: 52rem;
+  width: 95%;
   height: 38rem;
   background-color: #abbec6;
   border-radius: 15px; 
@@ -199,7 +199,7 @@
   align-items: center;
   margin-left: auto;
   background-color: #092e3a;
-  width: 29rem;
+  width: 25%;
   height: 37rem;
   border-radius: 15px;
 }
@@ -207,8 +207,8 @@
 .valor-produtos {
   display: flex;
   flex-direction: column;
-  width: 23rem;
-  height: 38rem;
+  width: 85%;
+  height: 80%;
   background-color: #abbec6;
   border-radius: 15px;
   
