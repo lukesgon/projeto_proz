@@ -1,3 +1,358 @@
-.item {
-  min-height: calc(100vh - 5vh);
+.container-carrinho {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+  align-items: center;
+  margin: 4rem 0;
+  
 }
+
+.carrinho-compras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #092e3a;
+  width: 50rem;
+  height: 35rem;
+  border-radius:15px ;
+  padding: 1rem 0;
+}
+
+.produtos-selecionados {
+  display: flex;
+  flex-direction: column;
+  width: 52rem;
+  height: 38rem;
+  background-color: #abbec6;
+  border-radius: 15px; 
+  
+  & > button {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    background-color: #274855;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 999px;
+    color: #abbec6;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+}
+
+
+.nav-carrinho {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  align-items: center;
+  margin: 1rem;
+
+  & > .produto {
+    flex-grow: 6 ;
+    margin-left: 6rem;
+  }
+
+  & > .quantidade {
+    flex-grow: 2;
+  }
+
+  & > .unidade {
+    flex-grow: 2;
+  }
+
+  & > .total {
+    margin-right: 2rem;
+  }
+
+}
+.barra-vertical-carrinho {
+  display: flex;
+  background-color: #092e3a;
+  width: 100%;
+  height: 0.125rem;
+}
+
+.carrinho-compras h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 1rem auto 0.5rem 3rem;
+}
+
+.conteudo-carrinho {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  align-items: center;
+  margin: 1rem;
+
+  & > .imagem-produto {
+    background-color: #092e3a;
+    width: 12%;
+    height: 6rem;
+    border-radius: 15px;
+  }
+
+  & > .texto-produto {
+    margin-left: 1rem;
+    flex-grow: 3;
+  }
+
+  & > .quantidade-produto {
+    display: flex;
+    margin-right: 4rem;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: center;
+
+    & > span {
+      display: flex;align-items: center;
+      justify-content: baseline;
+      background-color: #274855;
+      width: 1.5rem;
+      font-weight: 700;
+      color: #abbec6;
+      padding: 0.5rem;
+      height: 1vh;
+      border-radius: 5px;
+
+      & > p {
+        margin-left: auto;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    & > button {
+      margin: 0.5rem;
+      cursor: pointer;
+      background: none;
+      cursor: pointer;
+      font-size: large;
+      font-weight: 700;
+    }
+  }
+
+  & > .valor-produto {
+    margin-right: 3rem;
+    flex-grow: 1.5;
+  }
+
+  & > .total-produto {
+    flex-grow: 0.5;
+  }
+
+}
+
+
+
+.frete {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto 0 3rem;
+}
+
+.frete input {
+  width: 7rem;
+}
+
+.frete p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #abbec6;
+}
+
+.frete input {
+  margin-left: 1rem;
+  border-radius: 9999px;
+  background-color: #abbec6;
+  padding: 0.3rem;
+}
+
+.frete button {
+  width: 6rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  border-radius: 9999px;
+  padding: 0.3rem;
+  color: #abbec6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: #274855;
+  cursor: pointer;
+}
+
+
+.resumo-pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: #092e3a;
+  width: 29rem;
+  height: 37rem;
+  border-radius: 15px;
+}
+
+.valor-produtos {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 38rem;
+  background-color: #abbec6;
+  border-radius: 15px;
+  
+  & > hr {
+    width: 100%; 
+    border: 0.125rem dashed #092e3a;
+    border-spacing: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
+.header-resumo {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  & > .produto-resumo {
+    margin-left: 0.5rem;
+    flex-grow: 4;
+  }
+  & > .codigo-resumo {
+    flex-grow: 2;
+  }
+  & > .quantidade-resumo {
+    flex-grow: 2;
+  }
+  & > .unidade-resumo {
+    flex-grow: 2;
+  }
+  & > .total-resumo {
+    flex-grow: 2;
+  }
+}
+
+.produtos-resumo {
+  display: flex;
+  height: 80%;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  & > .console {
+    margin-left: 0.5rem;
+    flex-grow: 4;
+  }
+  & > .cod-produto-resumo {
+    flex-grow: 2;
+  }
+  & > .quant-produto-resumo {
+    flex-grow: 2;
+  }
+  & > .unit-produto-resumo {
+    flex-grow: 2;
+  }
+  & > .total-produto-resumo {
+    flex-grow: 2;
+  }
+
+}
+
+.endereco-entrega {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  & > .cep {
+    margin-left: 0.5rem;
+    flex-grow: 2;
+  }
+  & > .endereco {
+    flex-grow: 4;
+  }
+  & > .total {
+    margin-right: 0.7rem;
+  }
+}
+
+.usuario-entrega {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+
+  & > .cep-usuario {
+    margin-left: 0.5rem;
+    flex-grow: 3;
+  }
+  & > .endereco-usuario {
+    flex-grow: 8;
+  }
+  & > .total-usuario {
+    margin-right: 0.7rem;
+  }
+}
+
+.total-pedido {
+  display: flex;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
+
+  & > .texto-pedido {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
+.agradecimento {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #092e3a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.resumo-pedido h2 {
+  margin: 1rem auto 0.5rem 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.resumo-pedido button {
+  width: 8rem;
+  padding: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 9999px;
+  background-color: #274855;
+  color: #bc8c3c;
+  cursor: pointer;
+}
+
+
